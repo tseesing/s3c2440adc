@@ -1,0 +1,35 @@
+
+    This directory is part of s3c2440adc project, and
+provides a client. It was written in Qt5, receives the
+data with fixed format from server(Another part of this
+project), and extracts the datagram, then represents
+with dot diagram, line diagram or pillar diagram. You
+and also output operation log depend on your requisition.
+
+    From the starting of developing, the target of this part 
+was just to implements a oscillometer-like application for
+represents ADC data, but it also be capable of handling
+the other data source(e.g. using random number as data
+source When testing.), but may be have to modify something: 
+
+    1. fyyoscillometer/src/dataitem.h. The type of data
+       field is type of uint32_t, if your data can be negative
+       number, or other type, modify it. And, since server and
+       client have the same data format, you have to do the
+       same work on the same file in server part.
+
+    2. fyyoscillometer/src/fyymon.h. Two macros need one's
+       attention: DATA_RAW2VALUE and CONVERT_TO_Y_POSITION, 
+       the former is a formula for converting the raw data 
+       to value, the latter be used to convert raw data to 
+       Y position in XY-coordinate system, yep, the latter
+       requires the former. Modify them to be suited to your
+       platform.
+
+
+
+Note: This project is dristributed under the terms of the
+GNU General Public License as published by the Free Software
+Foundation(See:http://www.gnu.org/licenses/gpl.txt), and the
+other licenses which required by the free Qt project.
+

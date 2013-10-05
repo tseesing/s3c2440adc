@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="logo.svg"
+   inkscape:version="0.48.4 r9939"
+   version="1.1"
+   id="svg2"
+   height="268"
+   width="268"
+   enable-background="new">
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="53.438356"
+     inkscape:cy="65.31968"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer3"
+     showgrid="false"
+     inkscape:window-width="1400"
+     inkscape:window-height="997"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     width="640px"
+     inkscape:snap-page="false"
+     inkscape:snap-grids="false"
+     inkscape:snap-to-guides="false"
+     inkscape:object-paths="true"
+     inkscape:snap-nodes="false"
+     inkscape:snap-bbox="true" />
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient5277"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#47c947;stop-opacity:1"
+         offset="0"
+         id="stop5279" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient5267"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#f02727;stop-opacity:1;"
+         offset="0"
+         id="stop5269" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient5259"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop5261" />
+    </linearGradient>
+    <filter
+       inkscape:collect="always"
+       id="filter5516">
+      <feBlend
+         inkscape:collect="always"
+         mode="multiply"
+         in2="BackgroundImage"
+         id="feBlend5518" />
+    </filter>
+    <filter
+       id="filter5531"
+       inkscape:label="Fancy blur"
+       inkscape:menu="Blurs"
+       inkscape:menu-tooltip="Smooth colorized contour which allows desaturation and hue rotation"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur5533"
+         stdDeviation="5"
+         result="result1" />
+      <feComposite
+         id="feComposite5535"
+         in2="result1"
+         operator="arithmetic"
+         k2="2"
+         in="result1" />
+    </filter>
+  </defs>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-784.36218)"
+     style="display:inline"
+     sodipodi:insensitive="true" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="logo"
+     style="display:inline;filter:url(#filter5516)"
+     transform="translate(0,-212)">
+    <path
+       style="fill:#6e90f1;fill-opacity:0.9766355;fill-rule:nonzero;stroke:#67f116;stroke-width:5.79096031;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.64485964;stroke-dasharray:none;filter:url(#filter5531)"
+       d="m 134.93934,216.72391 c -71.747612,0 -129.5083264,57.60302 -129.5083264,129.15477 0,71.55174 57.7607144,129.15478 129.5083264,129.15478 71.74761,0 129.50832,-57.60304 129.50832,-129.15478 0,-71.55175 -57.76071,-129.15477 -129.50832,-129.15477 z m -56.690095,56.89676 121.414045,0 0,20.63224 -92.81227,0 0,53.34261 83.75152,0 0,20.60212 -83.75152,0 0,86.44454 -28.601775,0 0,-181.02151 z"
+       id="rect4897"
+       inkscape:connector-curvature="0"
+       transform="matrix(0.86589001,0,0,0.86109584,19.510926,47.336879)" />
+  </g>
+</svg>

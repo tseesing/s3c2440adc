@@ -1,0 +1,24 @@
+
+    This project is dristributed under the terms of the
+GNU General Public License as published by the Free Software
+Foundation(See:http://www.gnu.org/licenses/gpl.txt).
+
+    This subdirectory is the server part of s3c2440adc.
+    The server is a tcp protocal server. It reading ADC value 
+with libs3cadc(another part of this project) or date and
+time of the server host based of the client request. Then
+distributes to the client.
+    The server use linux epoll technique to handles client.
+    By default, server listens the port 65000, but can be specified
+with the other port use option -p.
+
+
+The available options(You can also specify -h to show them):
+
+    -f  Running in foreground
+    -c  Configuration file (Un-implement yet.)
+    -p  listening port
+    -P  pid file
+    -x  Quit the running one.
+    -h  help message
+

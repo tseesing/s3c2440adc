@@ -1,0 +1,24 @@
+
+This project is dristributed under the terms of the GNU
+General Public License as published by the Free Software
+Foundation(See:http://www.gnu.org/licenses/gpl.txt). 
+
+There are some files are duplicates. Since they are not 
+too many lines, and for migrating them to embeded platform 
+conveniently, I don't separate them to a third directory.
+They are: nqcommon.h nqcommon.c dataitem.h.
+
+This project consists of four part: 
+    1. driver   communication with ADC controller, and
+                creates device nodes under /dev
+
+    2. libs3cadc Libraries for handle device file operations.   
+
+    3. server   Sampling and distributes data back to clients.
+
+    4. client   Requesting data from server and represents in 
+                kinds of diagram, and log them.
+
+The details see README files in each subdirectories.
+
+

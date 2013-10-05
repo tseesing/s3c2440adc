@@ -1,0 +1,12 @@
+
+This project is dristributed under the terms of the GNU
+General Public License as published by the Free Software
+Foundation(See:http://www.gnu.org/licenses/gpl.txt).
+
+    This directory is the driver part of project s3c2440adc,
+which compiling with the linux kernel of version 2.6.34.14.  
+It creates 4 device nodes for S3C2440A ADC controlers under 
+/dev and handles the file operations from user space.
+
+    When compliling it, don't forget adjust the Makefile fits
+your kernel path.

@@ -1,0 +1,24 @@
+
+This project is dristributed under the terms of the GNU
+General Public License as published by the Free Software
+Foundation(See:http://www.gnu.org/licenses/gpl.txt).
+
+    This directory is the libraries part of project fl2440_adc.
+it provides three APIs for convenient reading ADC value.
+
+
+struct s3cadc * s3cadc_alloc(int32_t ch);
+    Open ADC device file and return a pointer to structure s3cadc, 
+    the argument ch specifies a channel number.
+    The struct s3cadc represents a ADC device, all ADC operations 
+    need an object of it.
+
+void s3cadc_destroy(struct s3cadc *);
+    s3cadc_alloc() dynamically  allocates memory, when finish sampling,
+    s3cadc_destroy() reclaim this memory area. and close the file 
+    descriptor.
+
+s3cadc_get_adc(struct s3cadc *, buf); 
+    It is a macor wraps the system call read. Just using like read(read(2)).
+
+Note: You should copy libraries to target machine by yourself.

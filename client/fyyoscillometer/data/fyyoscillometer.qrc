@@ -1,0 +1,10 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+<qresource>
+        <file alias="icon.png">logo32.png</file>
+        <file alias="logo.png">logo134.png</file>
+</qresource> 
+<qresource lang="zh">
+        <file>../translations/fyyoscillometer_zh_CN.qm</file>
+</qresource>
+</RCC>
