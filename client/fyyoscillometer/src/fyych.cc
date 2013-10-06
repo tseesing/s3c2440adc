@@ -317,7 +317,7 @@ void FyyCH::paintEvent(QPaintEvent *evp)
     evp = evp;
     QPainter painter(this);
     painter.fillRect(rect(), color);
-    painter.drawText(0, height() / 2.0 + 4, name + " " + tr("Src")); // 对于高度, 有坐标计算, 似乎有点问题.连标题栏也算上去了(parent = 0 的情况下)
+    painter.drawText(0, height() / 2.0 + 4, name + " " + tr("Src")); // 高度坐标计算, 似乎有点问题.连标题栏也算上去了(parent = 0 的情况下)
 }
 
 void FyyCH::mouseReleaseEvent(QMouseEvent * evm)
@@ -325,7 +325,6 @@ void FyyCH::mouseReleaseEvent(QMouseEvent * evm)
     evm = evm;
     int resValue;
 
-    qDebug("mouse Release");
     QPointer <FyyChSetDialog> confDialog = new FyyChSetDialog(this, this);
     resValue = confDialog->exec();
     if (resValue == QDialog::Rejected)
