@@ -48,7 +48,7 @@ void get_time(struct DataGram *);
 static int get_tcp_listen_socket_t(char *serv, int is_block)
 {
     int listenfd;
-    int ret_val;
+    int ret_val, on;
     struct addrinfo *addr, * addrs;
 
     struct addrinfo hints;
@@ -67,6 +67,7 @@ static int get_tcp_listen_socket_t(char *serv, int is_block)
         return -1;
     }
     addr = addrs;
+    on = 1;
     while(addr)
     {
         addr = addr->ai_next;
@@ -74,6 +75,7 @@ static int get_tcp_listen_socket_t(char *serv, int is_block)
         listenfd = socket(addr->ai_family, addr->ai_socktype, addr->ai_protocol);
         if (listenfd < 0)
             continue;
+        setsockopt(listenfd, SOL_SOCKET, SO_REUSEPORT, &on, sizeof(on));
         nq_debug("bind");
         if(!(bind (listenfd, addr->ai_addr, addr->ai_addrlen)))
             break;
